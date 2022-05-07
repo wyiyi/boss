@@ -1,0 +1,23 @@
+<view class="conatiner">
+  <!--今日统计区域-->
+  <view class="today-box">
+    <view class="shop-box">
+      <!-- <text class="shop-text">今日概况</text> -->
+      <image class="shop-img" src="../../images/home/切换.png" />
+    </view>
+    <view class="header">今日概况</view>
+    <view>
+      <text class="today-xl">今日收款</text>
+      <text class="today-x2">今日售量</text>
+    </view>
+    <view>
+      <text class="today-price">11000</text>
+      <text class="today-count">13000</text>
+    </view>
+  </view>
+  <!--表格区域-->
+  <view class="chart-with-img" wx:for="{{charts}}" wx:for-item="chart" wx:key="id">
+    <image src="../../images/icon/{{chart.id}}.png" mode="aspectFit" bindtap="open" data-chart="{{chart}}"></image>
+    {{chart.name}}
+  </view>
+</view>

@@ -1,0 +1,76 @@
+.conatiner{
+    display: block;
+    /* margin-top: 10px; */
+}
+
+.today-box {
+  background-color: #3377ff;
+  width: 100%;
+  height: 320rpx;
+}
+
+.header{
+  color: white;
+  font-size: 60rpx;
+  margin-left: 40rpx;
+  
+}
+
+.shop-box{
+  width: 30;
+  height: 80rpx;
+  float: right;
+  display: flex;
+  align-items: center;
+  padding-right: 0.5cm;
+}
+
+.shop-img{
+  margin-top: 10rpx;
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.today-xl {
+  color: white;
+  margin-left: 50rpx;
+  padding-left: 1cm;
+}
+
+.today-x2 {
+  color: white;
+  margin-left: 200rpx;
+  
+}
+
+.today-price {
+  color: white;
+  font-size: 70rpx;
+  margin-left: 80rpx;
+  padding-right: 2cm;
+}
+
+.today-count {
+  color: white;
+  font-size: 70rpx;
+  margin-right: 80rpx;
+}
+
+
+.chart-with-img {
+  display: inline-block;
+  width: 20%;
+  margin: 5px 2%;
+  text-align: center;
+}
+
+.chart-with-img image {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px; 
+  padding: 5px;
+  border: 1px solid white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1px;
+}

@@ -1,0 +1,5 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <!-- <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas> -->
+  <text  class="ec-canvas">这是订单管理</text>
+</view>
