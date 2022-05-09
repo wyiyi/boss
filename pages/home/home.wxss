@@ -1,22 +1,21 @@
-.conatiner{
-    display: block;
-    /* margin-top: 10px; */
+.conatiner {
+  display: block;
+  /* margin-top: 10px; */
 }
 
 .today-box {
   background-color: #3377ff;
   width: 100%;
-  height: 320rpx;
+  height: 280rpx;
 }
 
-.header{
+.header {
   color: white;
   font-size: 60rpx;
   margin-left: 40rpx;
-  
 }
 
-.shop-box{
+.shop-box {
   width: 30;
   height: 80rpx;
   float: right;
@@ -25,52 +24,65 @@
   padding-right: 0.5cm;
 }
 
-.shop-img{
+.shop-img {
   margin-top: 10rpx;
   width: 65rpx;
   height: 65rpx;
 }
 
+.today-text {
+  flex: 1;
+}
+
 .today-xl {
+  position: relative;
+  left: 99rpx;
+  top: 9rpx;
   color: white;
-  margin-left: 50rpx;
-  padding-left: 1cm;
 }
 
 .today-x2 {
+  position: relative;
+  left: 312rpx;
+  top: 8rpx;
   color: white;
-  margin-left: 200rpx;
-  
+}
+
+.today-num {
+  background-color: #3377ff;
+  flex: 1;
 }
 
 .today-price {
+  position: relative;
+  left: 73rpx;
+  top: 30rpx;
   color: white;
-  font-size: 70rpx;
-  margin-left: 80rpx;
-  padding-right: 2cm;
+  font-size: 60rpx;
 }
 
 .today-count {
+  position: relative;
+  left: 280rpx;
+  top: 30rpx;
   color: white;
-  font-size: 70rpx;
-  margin-right: 80rpx;
+  font-size: 60rpx;
 }
-
 
 .chart-with-img {
   display: inline-block;
   width: 20%;
-  margin: 5px 2%;
+  margin: 0px 2%;
   text-align: center;
 }
 
 .chart-with-img image {
   box-sizing: border-box;
   width: 100%;
-  height: 100px; 
+  height: 100px;
   padding: 5px;
   border: 1px solid white;
   display: block;
   margin: 0 auto;
-  margin-bottom: 1px;
+  margin-bottom: -15px;
 }

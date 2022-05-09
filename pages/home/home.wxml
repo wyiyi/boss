@@ -3,14 +3,14 @@
   <view class="today-box">
     <view class="shop-box">
       <!-- <text class="shop-text">今日概况</text> -->
-      <image class="shop-img" src="../../images/home/切换.png" />
+      <image class="shop-img" src="../../images/home/切换.png"/>
     </view>
     <view class="header">今日概况</view>
-    <view>
+    <view class="today-text">
       <text class="today-xl">今日收款</text>
       <text class="today-x2">今日售量</text>
     </view>
-    <view>
+    <view class="today-num">
       <text class="today-price">11000</text>
       <text class="today-count">13000</text>
     </view>

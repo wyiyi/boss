@@ -1,5 +1,47 @@
-<!--pages/order/order.wxml-->
-<view class="container">
-  <!-- <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas> -->
-  <text  class="ec-canvas">这是订单管理</text>
+<page-meta root-font-size="system" />
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">YYD305517343180955648
+        <image style="position: relative; left: 3rpx; top: -8rpx; width: 43rpx; height: 36rpx; display: inline-block; box-sizing: border-box" src="../../images/order/copy.png" />
+      </view>
+      <view class="weui-panel__bd">
+        <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+          <view aria-hidden="true" class="weui-media-box__hd">
+            <image class="weui-media-box__thumb" src="../../images/order/R-C.jpg" alt></image>
+          </view>
+          <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+            <text class="weui-media-box__title">999感冒灵颗粒</text>
+            <view class="weui-media-box__desc">下单时间：2022-05-01 10:30:03</view>
+            <view class="weui-media-box__desc">总价：￥45</view>
+          </view>
+        </navigator>
+        <navigator aria-labelledby="js_p1m2_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+          <view aria-hidden="true" class="weui-media-box__hd">
+            <image class="weui-media-box__thumb" src="../../images/order/R-A.jpg" alt></image>
+          </view>
+          <view aria-hidden="true" id="js_p1m2_bd" class="weui-media-box__bd">
+            <text class="weui-media-box__title">美林布洛芬混悬液</text>
+            <view class="weui-media-box__desc">下单时间：2022-05-05 10:10:03</view>
+            <view class="weui-media-box__desc">总价：￥34.5</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="weui-panel__hd">YYD305517343180955648
+        <image style="position: relative; left: 3rpx; top: -8rpx; width: 43rpx; height: 36rpx; display: inline-block; box-sizing: border-box" src="../../images/order/copy.png" />
+      </view>
+      <view class="weui-panel__bd">
+        <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+          <view aria-hidden="true" class="weui-media-box__hd">
+            <image class="weui-media-box__thumb" src="../../images/order/R-B.jpg" alt></image>
+          </view>
+          <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+            <text class="weui-media-box__title">江中健胃消食片</text>
+            <view class="weui-media-box__desc">下单时间：2022-05-01 10:30:03</view>
+            <view class="weui-media-box__desc">总价：￥10.2</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
 </view>
