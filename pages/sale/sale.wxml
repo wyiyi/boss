@@ -1,5 +1,28 @@
-<!--pages/sale/sale.wxml-->
-<view class="conatiner">
-<view>
-</view>
+<page-meta root-font-size="system" />
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <!-- 门店选择 -->
+  <view class="weui-cell weui-cell_active weui-cell_select">
+    <view class="weui-cell__bd">
+      <picker aria-role="combobox" bindchange="bindPicker1Change" range="{{array1}}">
+        <view class="weui-select" style="position: relative; left: 3rpx; top: 0rpx">{{array1[value1]}}</view>
+      </picker>
+    </view>
+  </view>
+  <!-- 日、周、月、自定义 -->
+  <view class="page__bd" style="height: 100%;">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <view aria-selected="true" aria-controls="panel1" id="tab1" class="weui-navbar__item weui-bar__item_on" aria-role="tab">选项一</view>
+        <view aria-controls="panel2" id="tab2" class="weui-navbar__item" aria-role="tab">选项二</view>
+        <view aria-controls="panel3" id="tab3" class="weui-navbar__item" aria-role="tab">选项三</view>
+      </view>
+      <view id="panel1" aria-labelledby="tab1" class="weui-tab__panel" aria-role="tabpanel">Sit sit </view>
+      <view style="display: none;" id="panel2" aria-labelledby="tab2" class="weui-tab__panel" aria-role="tabpanel">Consectetur neque facere </view>
+      <view style="display: none;" id="panel3" aria-labelledby="tab3" class="weui-tab__panel" aria-role="tabpanel">Dolor magnam expedita ex beatae maiores </view>
+    </view>
+  </view>
+  <!-- 表格 -->
+  <view>
+    <table-view headers="{{tableHeader}}" data="{{ row }}" stripe="{{ stripe }}" border="{{ border }}" />
+  </view>
 </view>

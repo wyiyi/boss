@@ -1,66 +1,108 @@
-// pages/sale/sale.js
+const sliderWidth = 96;
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  mixins: [require('../../mixin/common')],
   data: {
-
+    array1: ['全部门店', '浑南店', '和平店', '沈河店'],
+    value1: 0,
+    value2: 0,
+    value3: 0,
+    tableHeader: [
+      {
+        prop: 'datetime',
+        width: 150,
+        label: '日期',
+        color: '#55C355'
+      },
+      {
+        prop: 'sign_in',
+        width: 152,
+        label: '上班时间'
+      },
+      {
+        prop: 'sign_out',
+        width: 152,
+        label: '下班时间'
+      },
+      {
+        prop: 'work_hour',
+        width: 110,
+        label: '工时'
+      },
+      {
+        prop: 'statusText',
+        width: 110,
+        label: '状态'
+      }
+    ],
+    stripe: true,
+    border: true,
+    outBorder: true,
+    row: [
+      {
+          "id": 1,
+          "status": '正常',
+          "datetime": "04-01",
+          "sign_in_time": '09:30:00',
+          "sign_out_time": '18:30:00',
+          "work_hour": 8,
+      }, {
+          "id": 2,
+          "status": '迟到',
+          "datetime": "04-02",
+          "sign_in_time": '10:30:00',
+          "sign_out_time": '18:30:00',
+          "work_hour": 7,
+      }, {
+          "id": 29,
+          "status": '正常',
+          "datetime": "04-03",
+          "sign_in_time": '09:30:00',
+          "sign_out_time": '18:30:00',
+          "work_hour": 8,
+      }, {
+          "id": 318,
+          "status": '休息日',
+          "datetime": "04-04",
+          "sign_in_time": '',
+          "sign_out_time": '',
+          "work_hour": '',
+      }, {
+          "id": 319,
+          "status": '正常',
+          "datetime": "04-05",
+          "sign_in_time": '09:30:00',
+          "sign_out_time": '18:30:00',
+          "work_hour": 8,
+      }
+    ],
+    tabs: ['选项一', '选项二', '选项三'],
+    activeIndex: 1,
+    sliderOffset: 0,
+    sliderLeft: 0,
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  bindPicker1Change(e) {
+    this.setData({
+      value1: e.detail.value,
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  onLoad() {
+    debugger
+    const that = this;
+    wx.getSystemInfo({
+      success(res) {
+        that.setData({
+          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex,
+        });
+      },
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  tabClick(e) {
+    debugger
+    this.setData({
+      sliderOffset: e.currentTarget.offsetLeft,
+      activeIndex: e.currentTarget.id,
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
-})
+});

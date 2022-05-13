@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "销售统计",
-  "usingComponents": {}
+  "usingComponents": {
+    "table-view": "../../miniprogram_npm/miniprogram-table-component"
+  }
 }

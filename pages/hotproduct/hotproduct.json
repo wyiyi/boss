@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "热销品排行",
   "usingComponents": {
+    "table-view": "../../miniprogram_npm/miniprogram-table-component"
   }
 }
