@@ -9,17 +9,21 @@
     </view>
   </view>
   <!-- 日、周、月、自定义 -->
-  <view class="page__bd" style="height: 100%;">
-    <view class="weui-tab">
-      <view class="weui-navbar">
-        <view aria-selected="true" aria-controls="panel1" id="tab1" class="weui-navbar__item weui-bar__item_on" aria-role="tab">选项一</view>
-        <view aria-controls="panel2" id="tab2" class="weui-navbar__item" aria-role="tab">选项二</view>
-        <view aria-controls="panel3" id="tab3" class="weui-navbar__item" aria-role="tab">选项三</view>
+  <view class="nav_title" style="width: 750rpx; height: 207rpx; display: block; box-sizing: border-box">
+    <view class="nav_tab">
+      <view wx:for="{{tabs}}" class="{{selected==index?'hidden':'show'}}" data-index='{{index}}' bindtap="selected">{{item}}
+        <view class="{{selected==index?'nav_underline':''}}"></view>
       </view>
-      <view id="panel1" aria-labelledby="tab1" class="weui-tab__panel" aria-role="tabpanel">Sit sit </view>
-      <view style="display: none;" id="panel2" aria-labelledby="tab2" class="weui-tab__panel" aria-role="tabpanel">Consectetur neque facere </view>
-      <view style="display: none;" id="panel3" aria-labelledby="tab3" class="weui-tab__panel" aria-role="tabpanel">Dolor magnam expedita ex beatae maiores </view>
     </view>
+    <!-- tab框显示内容 -->
+    <image style="width: 30px; position: relative; left: 0rpx; top: 26rpx" mode="widthFix" src="../../images/sale/left.png" />
+    <view class="tab_date">
+      <view wx:if="{{selected == 0}}">2022-05-16 至 2022-05-16</view>
+      <view wx:if="{{selected == 1}}">2022-05-15 至 2022-05-21</view>
+      <view wx:if="{{selected == 2}}">2022-05-01 至 2022-05-30</view>
+      <view wx:if="{{selected == 3}}">2022-05-02 至 2022-05-30</view>
+    </view>
+    <image class="tab_image2" src="../../images/sale/right.png" />
   </view>
   <!-- 表格 -->
   <view>

@@ -20,3 +20,53 @@
 .weui-tab__panel {
   padding: 32px;
 }
+
+.nav_tab {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.show {
+  line-height: 100rpx;
+  text-align: center;
+  flex: 1;
+  color: #333333;
+  font-size: 28rpx;
+  opacity: 0.5;
+}
+.hidden {
+  line-height: 100rpx;
+  text-align: center;
+  color: #ef9ba8;
+  flex: 1;
+  font-size: 28rpx;
+}
+.nav_underline {
+  background: #ef9ba8;
+  width: 54rpx;
+  height: 6rpx;
+  margin-top: -10rpx;
+  margin-left: 70rpx;
+  border-radius: 8rpx;
+}
+
+.tab_image2 {
+  width: 71rpx;
+  height: 71rpx;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  left: 680rpx;
+  top: -131rpx;
+}
+
+.tab_date {
+  position: relative;
+  left: 125rpx;
+  top: -59rpx;
+  width: 502rpx;
+  height: 71rpx;
+  display: block;
+  box-sizing: border-box;
+}

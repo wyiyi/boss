@@ -4,3 +4,7 @@
   display: block;
   margin-right: 16px;
 }
+
+.image1{
+  position: relative; left: 3rpx; top: -8rpx; width: 43rpx; height: 36rpx; display: inline-block; box-sizing: border-box
+}

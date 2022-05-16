@@ -3,7 +3,7 @@
   <view class="page__bd">
     <view class="weui-panel weui-panel_access">
       <view class="weui-panel__hd">YYD305517343180955648
-        <image style="position: relative; left: 3rpx; top: -8rpx; width: 43rpx; height: 36rpx; display: inline-block; box-sizing: border-box" src="../../images/order/copy.png" />
+        <image class="image1" src="../../images/order/copy.png" />
       </view>
       <view class="weui-panel__bd">
         <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
@@ -27,8 +27,8 @@
           </view>
         </navigator>
       </view>
-      <view class="weui-panel__hd">YYD305517343180955648
-        <image style="position: relative; left: 3rpx; top: -8rpx; width: 43rpx; height: 36rpx; display: inline-block; box-sizing: border-box" src="../../images/order/copy.png" />
+      <view class="weui-panel__hd">YYD305517343181255648
+        <image class="image1" src="../../images/order/copy.png" />
       </view>
       <view class="weui-panel__bd">
         <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
@@ -39,6 +39,36 @@
             <text class="weui-media-box__title">江中健胃消食片</text>
             <view class="weui-media-box__desc">下单时间：2022-05-01 10:30:03</view>
             <view class="weui-media-box__desc">总价：￥10.2</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="weui-panel__hd">YYD305517213180955648
+        <image class="image1" src="../../images/order/copy.png" />
+      </view>
+      <view class="weui-panel__bd">
+        <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+          <view aria-hidden="true" class="weui-media-box__hd">
+            <image class="weui-media-box__thumb" src="../../images/order/R-D.jpg" alt></image>
+          </view>
+          <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+            <text class="weui-media-box__title">红霉素软膏</text>
+            <view class="weui-media-box__desc">下单时间：2022-05-16 16:30:03</view>
+            <view class="weui-media-box__desc">总价：￥34.5</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="weui-panel__hd">YYD305517343180922648
+        <image class="image1" src="../../images/order/copy.png" />
+      </view>
+      <view class="weui-panel__bd">
+        <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+          <view aria-hidden="true" class="weui-media-box__hd">
+            <image class="weui-media-box__thumb" src="../../images/order/R-E.png" alt></image>
+          </view>
+          <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+            <text class="weui-media-box__title">医用口罩</text>
+            <view class="weui-media-box__desc">下单时间：2022-05-4 12:30:03</view>
+            <view class="weui-media-box__desc">总价：￥18</view>
           </view>
         </navigator>
       </view>
