@@ -1,9 +1,21 @@
 <page-meta root-font-size="system" />
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <!-- 搜索框 -->
+      <view class="weui-search-bar__box">
+        <image class="weui-icon-search_in-box" type="search" size="14" src="../../images/order/search.png"></image>
+        <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" />
+      </view>
+    </view>
+    <!-- 搜索按钮,调用搜索查询方法 -->
+    <view class="weui-search-bar__cancel-btn" bindtap='方法名a'>搜索</view>
+  </view>
+
   <view class="page__bd">
     <view class="weui-panel weui-panel_access">
       <view class="weui-panel__hd">YYD305517343180955648
-        <image class="image1" src="../../images/order/copy.png" />
+        <image class="image1" src="../../images/order/copy.png" bindtap='viewCopyTextClick'>{{viewCopyMsg}}</image>
       </view>
       <view class="weui-panel__bd">
         <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
